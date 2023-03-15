@@ -42,46 +42,141 @@
     
     <div id="bushes" >Number of bushes checked is zero.</div>
     <div id ="penalty">Penalty is zero.</div>
-    <div> Click for help</div>
+    <div  onclick="help()"> Click for help</div>
     <div id="help" >Help report.</div>
 </div>
 
 </div>
 <div class="row">
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="Mouse" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="Mouse" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="Mouse" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="Mouse" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="Mouse" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="Mouse" style="height: 100px; width: 100px;"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(0)" alt="grass" style="height: 100px; width: 100px;" id="id0" ></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(1)" alt="grass" style="height: 100px; width: 100px;" id = "id1" ></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(2)" alt="grass" style="height: 100px; width: 100px;" id = "id2" ></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(3)" alt="grass" style="height: 100px; width: 100px;"  id = "id3"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(4)" alt="grass" style="height: 100px; width: 100px;" id = "id4" ></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(5)" alt="grass" style="height: 100px; width: 100px;" id = "id5" ></div>
 </div>
 
 <div class="row">
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="bigcat" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="bigcat" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="bigcat" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="bigcat" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="bigcat" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="bigcat" style="height: 100px; width: 100px;"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(6)" alt="grass" style="height: 100px; width: 100px;"  id="id6"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(7)" alt="grass" style="height: 100px; width: 100px;"  id="id7"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(8)" alt="grass" style="height: 100px; width: 100px;" id="id8" ></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(9)" alt="grass" style="height: 100px; width: 100px;" id="id9"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(10)" alt="grass" style="height: 100px; width: 100px;" id="id10" ></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(11)" alt="grass" style="height: 100px; width: 100px;" id="id11" ></div>
 </div>
 
 <div class="row">
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(12)" alt="grass" style="height: 100px; width: 100px;" id="id12"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(13)" alt="grass" style="height: 100px; width: 100px;" id="id13"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(14)" alt="grass" style="height: 100px; width: 100px;" id="id14"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(15)" alt="grass" style="height: 100px; width: 100px;" id="id15"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(16)" alt="grass" style="height: 100px; width: 100px;" id="id16"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(17)" alt="grass" style="height: 100px; width: 100px;" id="id17"></div>
 </div>
 
 <div class="row">
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
-    <div class="col-sm-2"><img src="smallbush.jpg" alt="grass" style="height: 100px; width: 100px;"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(18)" alt="grass" style="height: 100px; width: 100px;" id="id18"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(19)" alt="grass" style="height: 100px; width: 100px;" id="id19"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(20)" alt="grass" style="height: 100px; width: 100px;" id="id20"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(21)" alt="grass" style="height: 100px; width: 100px;" id="id21"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(22)" alt="grass" style="height: 100px; width: 100px;" id="id22"></div>
+    <div class="col-sm-2"><img src="smallbush.jpg" onclick="check(23)" alt="grass" style="height: 100px; width: 100px;" id="id23"></div>
 </div>
+
+<script>
+
+    let id='id';
+        let checkCount=0;
+        let penalty1=0;
+        let lastCheck=0;
+        let mouseLocation=13;
+        let catLocation=21;
+        let gameOver=false;
+        let ids=[ ];
+        for(let k=0;k<=23;k++)
+        {
+            ids[k]=id+k;
+        }
+        function check(position)
+        {
+            if(gameOver==true)
+            {
+
+            }
+
+            else
+            {
+
+                if(position==mouseLocation){
+                    id=ids[position]
+                    document.getElementById(id).src="mouse.jpg";
+                    gameOver=true;
+                    penalty1=penalty1-3;
+                    console.log("image is mouse "+position);
+                    console.log("penalty is "+penalty1);
+                    console.log("GameOver");
+                }
+
+                else if(position==catLocation){
+                    id=ids[position]
+                    document.getElementById(id).src="tiger.jpg";
+                    gameOver=true;
+                    penalty1=penalty1+4;
+                    console.log("image is cat "+position);
+                    console.log("penalty is "+penalty1);
+                    console.log("GameOver");
+                }
+                else
+                 {
+                    id=ids[position]
+                    document.getElementById(id).src="grass.jpg";
+                    checkCount+=1;
+                    penalty1+=1;
+                    console.log("checkcount is "+checkCount);
+                    console.log("penalty is " +penalty1);
+                }
+                lastCheck=position;
+                console.log("lastCheck position is "+lastCheck);
+            }
+             
+             bushes.innerHTML="No of bushes checked is "+checkCount;
+             penalty.innerHTML="Penalty is "+penalty1;
+        }
+
+        function help()
+        {
+            
+            let lastcol=lastCheck%6;
+            let lastrow=Math.floor(lastCheck/6);
+            let catcol=catLocation%6;
+            let catrow=Math.floor(catLocation/6);
+            let coldiff=Math.abs(lastcol-catcol);
+            let rowdiff=(Math.abs(lastrow-catrow));
+            let ratcol=mouseLocation%6;
+            let ratrow=Math.floor(mouseLocation/6);
+            let ratcoldiff=Math.abs(lastcol-ratcol);
+            let ratrowdiff=(Math.abs(lastrow-ratrow));
+            console.log(rowdiff,coldiff)
+            if(ratrowdiff<=1 && ratcoldiff<=1)
+            {
+                document.getElementById("help").innerHTML="squeek"
+                penalty1+=2;
+                penalty1.innerHTML="Penalty is "+penalty1;
+            }
+            else if(rowdiff<=1 && coldiff<=1)
+            {
+                document.getElementById("help").innerHTML="Meow"
+                penalty1+=2;
+                penalty1.innerHTML="Penalty is "+penalty1;
+            }
+            else{
+                document.getElementById("help").innerHTML="sorry, no help available"
+                penalty1+=2;
+                penalty1.innerHTML="Penalty is "+penalty1;
+            }
+        }
+
+</script>
 
    
 
