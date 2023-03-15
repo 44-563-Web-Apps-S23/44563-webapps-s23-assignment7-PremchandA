@@ -108,73 +108,38 @@
             {
 
                 if(position==mouseLocation){
-                    id=ids[position]
+                    pd=pds[position]
                     document.getElementById(id).src="mouse.jpg";
                     gameOver=true;
                     penalty1=penalty1-3;
-                    console.log("image is mouse "+position);
-                    console.log("penalty is "+penalty1);
-                    console.log("GameOver");
+                    
                 }
 
                 else if(position==catLocation){
-                    id=ids[position]
+                    pd=pds[position]
                     document.getElementById(id).src="tiger.jpg";
                     gameOver=true;
                     penalty1=penalty1+4;
-                    console.log("image is cat "+position);
-                    console.log("penalty is "+penalty1);
-                    console.log("GameOver");
+                   
                 }
                 else
                  {
-                    id=ids[position]
+                    pd=pds[position]
                     document.getElementById(id).src="grass.jpg";
                     checkCount+=1;
                     penalty1+=1;
-                    console.log("checkcount is "+checkCount);
-                    console.log("penalty is " +penalty1);
+                    
                 }
                 lastCheck=position;
-                console.log("lastCheck position is "+lastCheck);
+                
             }
              
              bushes.innerHTML="No of bushes checked is "+checkCount;
              penalty.innerHTML="Penalty is "+penalty1;
         }
 
-        function help()
-        {
-            
-            let lastcol=lastCheck%6;
-            let lastrow=Math.floor(lastCheck/6);
-            let catcol=catLocation%6;
-            let catrow=Math.floor(catLocation/6);
-            let coldiff=Math.abs(lastcol-catcol);
-            let rowdiff=(Math.abs(lastrow-catrow));
-            let ratcol=mouseLocation%6;
-            let ratrow=Math.floor(mouseLocation/6);
-            let ratcoldiff=Math.abs(lastcol-ratcol);
-            let ratrowdiff=(Math.abs(lastrow-ratrow));
-            console.log(rowdiff,coldiff)
-            if(ratrowdiff<=1 && ratcoldiff<=1)
-            {
-                document.getElementById("help").innerHTML="squeek"
-                penalty1+=2;
-                penalty1.innerHTML="Penalty is "+penalty1;
-            }
-            else if(rowdiff<=1 && coldiff<=1)
-            {
-                document.getElementById("help").innerHTML="Meow"
-                penalty1+=2;
-                penalty1.innerHTML="Penalty is "+penalty1;
-            }
-            else{
-                document.getElementById("help").innerHTML="sorry, no help available"
-                penalty1+=2;
-                penalty1.innerHTML="Penalty is "+penalty1;
-            }
-        }
+        
+
 
 </script>
 
