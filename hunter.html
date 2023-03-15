@@ -108,7 +108,7 @@
             {
 
                 if(position==mouseLocation){
-                    pd=pds[position]
+                    id=ids[position]
                     document.getElementById(id).src="mouse.jpg";
                     gameOver=true;
                     penalty1=penalty1-3;
@@ -116,7 +116,7 @@
                 }
 
                 else if(position==catLocation){
-                    pd=pds[position]
+                    id=ids[position]
                     document.getElementById(id).src="tiger.jpg";
                     gameOver=true;
                     penalty1=penalty1+4;
@@ -124,7 +124,7 @@
                 }
                 else
                  {
-                    pd=pds[position]
+                    id=ids[position]
                     document.getElementById(id).src="grass.jpg";
                     checkCount+=1;
                     penalty1+=1;
@@ -137,7 +137,45 @@
              bushes.innerHTML="No of bushes checked is "+checkCount;
              penalty.innerHTML="Penalty is "+penalty1;
         }
-
+        let row=0;
+        let row1=0;
+        let row2=0
+        let col1=0;
+        let col=0;
+        let col2=0;
+        function help()
+        {
+           
+            let lastcolumn=lastCheck%6;
+            let lastrow1=Math.floor(lastCheck/6);
+            let catcolumn=catLocation%6;
+            let catrow1=Math.floor(catLocation/6);
+            let cold=Math.abs(lastcolumn-catcolumn);
+            let rowd=(Math.abs(lastrow1-catrow1));
+            let ratcolumn=mouseLocation%6;
+            let ratrow2=Math.floor(mouseLocation/6);
+            let ratcold=Math.abs(lastcolumn-ratcolumn);
+            let ratrowd=(Math.abs(lastrow1-ratrow2));
+            
+            if(ratrowd<=1 && ratcold<=1)
+            {
+                document.getElementById("help").innerHTML="squeek"
+                penalty1+=2;
+                penalty.innerHTML="Penalty is "+penalty1;
+            }
+            else if(rowd<=1 && cold<=1)
+            {
+                document.getElementById("help").innerHTML="Meow"
+                penalty1+=2;
+                penalty.innerHTML="Penalty is "+penalty1;
+            }
+            else{
+                document.getElementById("help").innerHTML="sorry, no help available"
+                penalty1+=2;
+                penalty.innerHTML="Penalty is "+penalty1;
+            }
+        }
+    
         
 
 
