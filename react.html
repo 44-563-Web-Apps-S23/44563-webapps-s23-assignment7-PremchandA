@@ -34,9 +34,11 @@
     console.log(reactTime);
   }
   let k=0;
+  let rand=Math.floor((Math.random() * 10) + 2);
   function startTime(){
-    for( k=0;k<9;k++){
-        console.log(9);
+     rand=Math.floor((Math.random() * 10) + 2);
+    for( k=0;k<rand;k++){
+        console.log(rand);
         setTimeou(k); 
     }
     
@@ -46,7 +48,7 @@
             console.log("entered if");
             document.getElementById('target').innerHTML="Too Slow";
          }
-         else{
+         else{s
             console.log("entered else");
             let endTime;
             endTime=Date.now();
@@ -62,7 +64,7 @@
    {
         setTimeout(()=>{
                 document.getElementById('countdown').innerHTML=k;
-            },(9-k)*1000);
+            },(rand-k)*1000);
     }
   
   </script>
