@@ -45,6 +45,7 @@
     <div  onclick="help()"> Click for help</div>
     <div id="help" >Help report.</div>
 </div>
+<button type="button" class="btn btn-warning" onclick="start()"> Start Again</button>
 
 </div>
 <div class="row">
@@ -89,8 +90,8 @@
         let checkCount=0;
         let penalty1=0;
         let lastCheck=0;
-        let mouseLocation=13;
-        let catLocation=21;
+        var mouseLocation=Math.floor(Math.random()*24);
+  var catLocation=Math.floor(Math.random()*24);
         let gameOver=false;
         let ids=[ ];
         for(let k=0;k<=23;k++)
@@ -175,6 +176,20 @@
                 penalty.innerHTML="Penalty is "+penalty1;
             }
         }
+
+        function start() {
+  mouseLocation=Math.floor(Math.random()*24);
+  catLocation=Math.floor(Math.random()*24);
+  checkCount=0
+  penalty=0
+  lastCheck=0
+  gameOver=false
+  Penalty.innerHTML="Penalty is "+penalty;
+  bushes.innerHTML="Number of bushes checked is "+checkCount;
+  for (i = 0; i < 24; i++) {
+    document.getElementById(ids[i]).src ="smallbush.png";
+  }
+}
     
         
 
