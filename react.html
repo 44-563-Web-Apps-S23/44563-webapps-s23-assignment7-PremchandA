@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>setTimeout use</title>
+  <title>react document</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,63 +11,61 @@
 </head>
 <body>
 
-    <h2>Speed check by Premchand Are</h2>
+  <h2>Speed check by Premchand Are</h2>
 
-    <div id="target"> Your time </div>
-    <button type="button"
-    class="btn btn-primary"
-    onclick="startTime()">
-    Start Timer</button>
-    <div id="counter"> Count </div>
-    <button type="button"
-    class="btn btn-primary"
-    onclick="recordTime()">
-    React</button>
-    
-    <p id="countdown">I will become red </p>
-    <script> 
-    let reactTime 
-    function recordTime(){
-      reactTime=undefined;
-      
-      reactTime= Date.now();
-      console.log(reactTime);
+  <div id="target"> Your time </div>
+  <button type="button"
+  class="btn btn-primary"
+  onclick="startTime()">
+  Start Timer</button>
+  <div id="counter"> Count </div>
+  <button type="button"
+  class="btn btn-primary"
+  onclick="recordTime()">
+  React</button>
+  
+  <p id="countdown">I will become red </p>
+  <script> 
+  let reactTime 
+  function recordTime(){
+    reactTime=undefined;
+    //Set(reactTime)= new Date.now();
+    reactTime= Date.now();
+    console.log(reactTime);
+  }
+  let k=0;
+  function startTime(){
+    for( k=0;k<9;k++){
+        console.log(9);
+        setTimeou(k); 
     }
-    let k=0;
     
-    function startTime(){
-        var phaseoneValue = Math.floor(Math.random() *9+2);
-      for( k=0;k<phaseoneValue;k++){
-          console.log(rv);
-          setTimeou(k); 
-      }
-      
-    setTimeout( () => {
-          console.log("Entered anononymouse fn");
-           if(reactTime==undefined){
-              console.log("entered if");
-              document.getElementById('target').innerHTML="Too Slow";
-           }
-           else{
-              console.log("entered else");
-              let endTime;
-              endTime=Date.now();
-              console.log("endtime is"+endTime);
-              let temp=endTime-reactTime;
-              console.log(temp);
-              document.getElementById('target').innerHTML="Time was "+temp;
-           }
-          },8*1000);
-      }
-      
-      function setTimeou(k)
-     {
-          setTimeout(()=>{
-                  document.getElementById('countdown').innerHTML=k;
-              },(9-k)*1000);
-      }
+  setTimeout( () => {
+        console.log("Entered anononymouse fn");
+         if(reactTime==undefined){
+            console.log("entered if");
+            document.getElementById('target').innerHTML="Too Slow";
+         }
+         else{
+            console.log("entered else");
+            let endTime;
+            endTime=Date.now();
+            console.log("endtime is"+endTime);
+            let temp=endTime-reactTime;
+            console.log(temp);
+            document.getElementById('target').innerHTML="Time was "+temp;
+         }
+        },8*1000);
+    }
     
-    </script>
+    function setTimeou(k)
+   {
+        setTimeout(()=>{
+                document.getElementById('countdown').innerHTML=k;
+            },(9-k)*1000);
+    }
+  
+  </script>
 
 </body>
 </html>
