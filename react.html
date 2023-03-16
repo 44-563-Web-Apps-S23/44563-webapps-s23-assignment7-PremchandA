@@ -36,7 +36,8 @@
     let k=0;
     
     function startTime(){
-      for( k=0;k<9;k++){
+        var phaseoneValue = Math.floor(Math.random() *9+2);
+      for( k=0;k<phaseoneValue;k++){
           console.log(rv);
           setTimeou(k); 
       }

@@ -39,11 +39,16 @@
 		<button onclick="makeNewDiv()">Add value</button>
 		<br>
 		<br>
+		
 		<button onclick="get()">Get</button>
+		
 		<br>
 		<br>
 
 	<button onclick="delay()">Delay</button>
+	<br>
+	<br>
+	<button onclick="promote()">Promote</button>
 	
 	
 </body>
@@ -83,5 +88,14 @@
             container1.append(removedItem,container1.firstChild)
         }
     }
+
+	function promote(){
+			let queueItems = document.getElementsByClassName("delayQ")
+			let digit=Math.floor(Math.random()*queueItems.length);
+			removedItem=queueItems[digit];
+			queueItems[digit].remove();
+			let container2 = document.getElementById('target')
+			container2.insertBefore(removedItem,container2.firstChild)
+		}
 </script>
 </html>	
